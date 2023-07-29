@@ -3,7 +3,7 @@ app:
   baseUrl: http://localhost:3000
 
 organization:
-  name: My Company
+  name: Parca SRV
 
 backend:
   # Used for enabling authentication, secret is shared by all backend plugins
@@ -60,6 +60,8 @@ techdocs:
     runIn: 'docker' # Alternatives - 'local'
   publisher:
     type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
+    local:
+      publishDirectory: '/techdocs/backstage'
 
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
